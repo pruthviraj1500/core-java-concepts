@@ -1,5 +1,7 @@
 package multithreading;
 
+// check and act race condition
+
 class BankCheckThenWrite implements Runnable{
 
     int balance = 100;
