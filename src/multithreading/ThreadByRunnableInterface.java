@@ -24,7 +24,7 @@ public class ThreadByRunnableInterface extends Greek implements Runnable{
         th2.start();
 
         System.out.println("In main method");
-        
+
     }
 
 }

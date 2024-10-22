@@ -65,6 +65,26 @@ public class FindNthHighestSalary {
 
         System.out.println(emp);
 
+        // Find Only highest salay not other employee details
+
+        List<Employee> empList1 = Arrays.asList(
+                new Employee(101, "Pruthviraj",29254.88),
+                new Employee(102, "Sahil", 25000.66),
+                new Employee(103,"Yogesh", 20000.99),
+                new Employee(104, "Rajeshwar", 26000),
+                new Employee(105, "Sudarshan", 12000.88),
+                new Employee(106,"Ranjeet", 18000.76)
+        );
+
+        Double highestSalary = empList1.stream()
+                .map(x -> x.getSalary())
+//              .sorted(Comparator.reverseOrder())
+                .sorted((x,y) -> (int) (y-x))
+                .findFirst()
+                .get();
+
+        System.out.println(highestSalary);      //29254.0
+
     }
 
 }
