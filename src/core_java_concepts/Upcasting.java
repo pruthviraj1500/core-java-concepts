@@ -1,4 +1,4 @@
-package com.programming;
+package core_java_concepts;
 
 class UParent{
     void greet(){
