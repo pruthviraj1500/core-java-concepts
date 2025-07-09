@@ -1,4 +1,4 @@
-package com.programming;
+package core_java_concepts;
 
 /*
   --- In this, implement functional interface using Normal class, Anonymous class and Lambda expression
